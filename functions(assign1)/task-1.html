@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Function</h2>
+
+<p>This shows an example to demonstarte how a function can be passed as a parameter to another function.</p>
+
+<p id="demo"></p>
+
+<script>
+var hello;
+
+ function outer(value,func) {
+  alert(func(value));
+}
+function inner(value){
+    return "hi "+value;
+}
+
+</script>
+<button onclick = "outer('sindhu', inner)"> 
+    Click Here 
+</button> 
+</body>
+</html>
